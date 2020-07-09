@@ -1,0 +1,36 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+#particles-js{
+    height: 100vh;
+    background: linear-gradient(45deg,pink,rgb(165, 165, 226));
+    font-family: monospace;
+}
+.box{
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    background-color: rgb(4, 4, 26);
+    border-radius: 20px;
+}
+.content,.temperature{
+    color: rgb(241, 241, 202);
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+#temp{
+    font-size: 80px;
+}
+.degree{
+    font-size: 25px;
+}
+.box:hover{
+    box-shadow: 0 22px 20px 0 rgba(0, 0, 0, 0.2), 0 22px 20px 0 rgba(0, 0, 0, 0.19);
+}
