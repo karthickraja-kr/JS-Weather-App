@@ -9,7 +9,7 @@ window.addEventListener("load",() =>{
         navigator.geolocation.getCurrentPosition(position =>{
             long = position.coords.longitude;
             lat = position.coords.latitude;
-            fetch(`http://api.weatherstack.com/current?access_key=592c72a8354f6c906412155a9a1fd7a4&query=${lat},${long}`)
+            fetch(`https://api.weatherstack.com/current?access_key=592c72a8354f6c906412155a9a1fd7a4&query=${lat},${long}`)
                 .then(weather =>{
                     return weather.json();
                 })
