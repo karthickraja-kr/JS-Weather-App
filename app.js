@@ -14,6 +14,7 @@ window.addEventListener("load",() =>{
                     return weather.json();
                 })
                 .then(data =>{
+                    console.log(data);
                     cityName.textContent = data.location.name; 
                     temperature.textContent = data.current.temperature; 
                     climate.textContent =  data.current.weather_descriptions;
